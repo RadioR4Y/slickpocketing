@@ -13,7 +13,7 @@ config_version=5
 <<<<<<< Updated upstream
 config/name="Slickpocketing"
 =======
-config/name="Slickpocketing"
+config/name="slickpocketing"
 run/main_scene="uid://c5e5jmeyn60ou"
 >>>>>>> Stashed changes
 config/features=PackedStringArray("4.6", "Forward Plus")
@@ -21,7 +21,7 @@ config/icon="res://icon.svg"
 
 [dotnet]
 
-project/assembly_name="Slickpocketing"
+project/assembly_name="slickpocketing"
 
 [physics]
 
