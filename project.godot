@@ -10,15 +10,8 @@ config_version=5
 
 [application]
 
-<<<<<<< Updated upstream
 config/name="Slickpocketing"
-=======
-config/name="slickpocketing"
 run/main_scene="uid://c5e5jmeyn60ou"
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
