@@ -2,6 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://drd44ujlnofi6" path="res://Scenes/player.tscn" id="1_ig7tw"]
 
+[sub_resource type="TileSet" id="TileSet_ig7tw"]
+
 [node name="Main" type="Node2D" unique_id=1644436590]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1507716130]
+tile_set = SubResource("TileSet_ig7tw")
 
 [node name="Player" parent="." unique_id=845833004 instance=ExtResource("1_ig7tw")]
