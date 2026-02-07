@@ -162,18 +162,30 @@ animations = [{
 "speed": 3.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_v0iea"]
-size = Vector2(32, 32)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cvnsp"]
+size = Vector2(12, 14)
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1820272655]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v0iea"]
+size = Vector2(12, 7)
+
+[node name="Player" type="CharacterBody2D" unique_id=1820272655]
 script = ExtResource("1_cvnsp")
 
 [node name="animation" type="AnimatedSprite2D" parent="." unique_id=2133137415]
 sprite_frames = SubResource("SpriteFrames_vgqql")
 animation = &"idlefront"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1043436235]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=369545439]
+zoom = Vector2(1.5, 1.5)
+
+[node name="player_hit" type="Area2D" parent="." unique_id=548978220]
+
+[node name="hitbox" type="CollisionShape2D" parent="player_hit" unique_id=1587514436]
+shape = SubResource("RectangleShape2D_cvnsp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=586338652]
+position = Vector2(0, 3.5)
 shape = SubResource("RectangleShape2D_v0iea")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=369545439]
-zoom = Vector2(2, 2)
+[connection signal="area_entered" from="player_hit" to="." method="_on_player_hit_area_entered"]
+[connection signal="area_exited" from="player_hit" to="." method="_on_player_hit_area_exited"]

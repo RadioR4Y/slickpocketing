@@ -50,3 +50,12 @@ func _process(delta: float) -> void:
 		
 	if Input.is_action_just_released("down"):
 		$animation.play("idlefront")
+
+
+func _on_player_hit_area_entered(area: Area2D) -> void:
+	if area.is_in_group("hurtbox"):
+		print("touching target")
+
+func _on_player_hit_area_exited(area: Area2D) -> void:
+	if area.is_in_group("hurtbox"):
+		print("not touching target")
