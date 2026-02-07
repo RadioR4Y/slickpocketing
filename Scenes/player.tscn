@@ -176,3 +176,4 @@ animation = &"idlefront"
 shape = SubResource("RectangleShape2D_v0iea")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=369545439]
+zoom = Vector2(2, 2)
