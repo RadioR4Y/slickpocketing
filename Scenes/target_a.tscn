@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://16xm6wtd70y1"]
+
+[ext_resource type="Texture2D" uid="uid://bhqg6le1vsp30" path="res://Assets/Character/prototype_character_red.png" id="1_ffar1"]
+[ext_resource type="Script" uid="uid://be634ux5n8hhn" path="res://Assets/Scripts/target_a.gd" id="1_x4icp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x4icp"]
+atlas = ExtResource("1_ffar1")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f4atv"]
+atlas = ExtResource("1_ffar1")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nvfuo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x4icp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f4atv")
+}],
+"loop": true,
+"name": &"idlefront",
+"speed": 1.5
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ffar1"]
+size = Vector2(12, 8)
+
+[node name="TargetA" type="Node2D" unique_id=145517665]
+script = ExtResource("1_x4icp")
+
+[node name="animation" type="AnimatedSprite2D" parent="." unique_id=1301023502]
+sprite_frames = SubResource("SpriteFrames_nvfuo")
+animation = &"idlefront"
+frame_progress = 0.5918517
+
+[node name="Area2D" type="Area2D" parent="." unique_id=173870464 groups=["hurtbox"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=923765740]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_ffar1")

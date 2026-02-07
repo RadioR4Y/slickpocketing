@@ -1,9 +1,10 @@
-[gd_scene format=4 uid="uid://c5e5jmeyn60ou"]
+[gd_scene format=3 uid="uid://c5e5jmeyn60ou"]
 
 [ext_resource type="PackedScene" uid="uid://drd44ujlnofi6" path="res://Scenes/player.tscn" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://5eloe4iarh5j" path="res://Assets/Images/neo_zero_tiles_and_buildings_greyscale.png" id="2_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://dc6ifuaejpptf" path="res://Assets/Images/neo_zero_props_and_items_greyscale.png" id="3_h2yge"]
 [ext_resource type="Texture2D" uid="uid://bo0lo6xqm7af5" path="res://Assets/Images/greyroad.png" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://16xm6wtd70y1" path="res://Scenes/target_a.tscn" id="5_lquwl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
 texture = ExtResource("2_0xm2m")
@@ -852,5 +853,7 @@ sources/2 = SubResource("TileSetAtlasSource_7mycd")
 z_index = 4
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1767053401]
-tile_map_data = PackedByteArray("AAD9//7/AAADABIAAAD9////AAADABMAAAD+//7/AAAEABIAAAD+////AAAEABMAAAD///7/AAAFABIAAAD/////AAAFABMAAAAAAP7/AAAGABAAAAAAAP//AAAGABEAAAABAP7/AAAHABAAAAABAP//AAAHABEAAAACAP7/AAAIABAAAAACAP//AAANAAEAAAAAAPz/AAAMABAAAAAAAP3/AAAMABEAAAABAPz/AAANABAAAAABAP3/AAANABEAAAACAPz/AAAOABAAAAACAP3/AAAOABEAAAADAP7/AAAIAA4AAAADAP//AAAIAA8AAAAEAP7/AAAIABAAAAAEAP//AAAIABEAAAA=")
 tile_set = SubResource("TileSet_7mycd")
+
+[node name="TargetA" parent="." unique_id=145517665 instance=ExtResource("5_lquwl")]
+position = Vector2(25, 0)
