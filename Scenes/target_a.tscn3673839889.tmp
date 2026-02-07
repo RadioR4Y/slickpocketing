@@ -37,7 +37,7 @@ sprite_frames = SubResource("SpriteFrames_nvfuo")
 animation = &"idlefront"
 frame_progress = 0.5918517
 
-[node name="target_hit" type="Area2D" parent="." unique_id=173870464 groups=["hurtbox"]]
+[node name="target_hit" type="Area2D" parent="." unique_id=173870464]
 
 [node name="hurtbox" type="CollisionShape2D" parent="target_hit" unique_id=923765740]
 position = Vector2(0, 3)
