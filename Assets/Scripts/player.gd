@@ -18,8 +18,6 @@ func _physics_process(_delta):
 #animation
 var left = false
 
-
-
 func _ready() -> void:
 	$animation.play("idlefront")
 
