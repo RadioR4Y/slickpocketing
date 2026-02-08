@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://16xm6wtd70y1"]
 
 [ext_resource type="Texture2D" uid="uid://bhqg6le1vsp30" path="res://Assets/Character/prototype_character_red.png" id="1_ffar1"]
-[ext_resource type="Script" uid="uid://be634ux5n8hhn" path="res://Assets/Scripts/target_a.gd" id="1_x4icp"]
+[ext_resource type="Script" uid="uid://be634ux5n8hhn" path="res://Assets/Scripts/targets.gd" id="1_x4icp"]
 [ext_resource type="Texture2D" uid="uid://dkn6exffh51vv" path="res://Assets/Images/text.png" id="3_f4atv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x4icp"]

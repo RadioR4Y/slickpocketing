@@ -180,7 +180,7 @@ zoom = Vector2(1.5, 1.5)
 
 [node name="player_hit" type="Area2D" parent="." unique_id=548978220 groups=["hitbox"]]
 
-[node name="hitbox" type="CollisionShape2D" parent="player_hit" unique_id=1587514436]
+[node name="hitbox" type="CollisionShape2D" parent="player_hit" unique_id=1587514436 groups=["hitbox"]]
 position = Vector2(-0.5, 0)
 shape = SubResource("RectangleShape2D_cvnsp")
 
