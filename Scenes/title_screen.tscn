@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://ddqd0k3owfwr3"]
+
+[ext_resource type="Script" uid="uid://dgq083sqhhn53" path="res://TitleScreen.gd" id="1_klylv"]
+[ext_resource type="FontFile" uid="uid://h7nvuv80ogi1" path="res://Assets/Fonts/Pixelon-OGALo.ttf" id="2_p3fck"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_4gxqj"]
+font = ExtResource("2_p3fck")
+font_size = 90
+
+[node name="TitleScreen" type="Control" unique_id=2079629252]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_klylv")
+
+[node name="StartButton" type="Button" parent="." unique_id=1096479608]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 171.0
+offset_right = 393.0
+offset_bottom = 223.0
+text = "Start"
+
+[node name="Quit" type="Button" parent="." unique_id=1826417992]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 235.0
+offset_right = 393.0
+offset_bottom = 286.0
+text = "Quit"
+
+[node name="Title" type="Label" parent="." unique_id=528441934]
+layout_mode = 0
+offset_top = 25.0
+offset_right = 639.0
+offset_bottom = 204.0
+text = "Slickpocketing"
+label_settings = SubResource("LabelSettings_4gxqj")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="." unique_id=1355240944]
+layout_mode = 0
+offset_left = 14.000004
+offset_top = 264.0
+offset_right = 241.0
+offset_bottom = 287.0
+rotation = -0.296501
+text = "Press E to Slickpocket Victims"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
