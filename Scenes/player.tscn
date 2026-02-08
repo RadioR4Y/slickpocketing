@@ -176,7 +176,7 @@ sprite_frames = SubResource("SpriteFrames_vgqql")
 animation = &"idlefront"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=369545439]
-zoom = Vector2(1.5, 1.5)
+zoom = Vector2(2, 2)
 
 [node name="player_hit" type="Area2D" parent="." unique_id=548978220]
 
