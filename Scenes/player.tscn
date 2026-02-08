@@ -172,7 +172,20 @@ script = ExtResource("1_cvnsp")
 sprite_frames = SubResource("SpriteFrames_vgqql")
 animation = &"idlefront"
 
+<<<<<<< Updated upstream
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1043436235]
+=======
+[node name="Camera2D" type="Camera2D" parent="." unique_id=369545439]
+zoom = Vector2(2, 2)
+
+[node name="player_hit" type="Area2D" parent="." unique_id=548978220]
+
+[node name="hitbox" type="CollisionShape2D" parent="player_hit" unique_id=1587514436]
+shape = SubResource("RectangleShape2D_cvnsp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=586338652]
+position = Vector2(0, 3.5)
+>>>>>>> Stashed changes
 shape = SubResource("RectangleShape2D_v0iea")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=369545439]
