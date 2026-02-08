@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @export var move_speed : float = 100
+@export var game_started: Area2D #"res://Assets/Scripts/targets.gd").instance_count
 
 func _physics_process(_delta):
 	# Get Input Direction
@@ -13,7 +14,6 @@ func _physics_process(_delta):
 	
 	# Move and Slide function uses velocity of character body to move character on map
 	move_and_slide()
-	#move_and_collide()
 
 #animation
 var left = false
@@ -22,7 +22,6 @@ func _ready() -> void:
 	$animation.play("idlefront")
 
 func _process(delta: float) -> void:
-	
 	if Input.is_action_just_pressed("right"):
 		$animation.play("walkside")
 		left = false
@@ -50,3 +49,9 @@ func _process(delta: float) -> void:
 		
 	if Input.is_action_just_released("down"):
 		$animation.play("idlefront")
+	#pause_player()
+
+#
+#func pause_player():
+#	if (game_started == 1):
+#		get_tree().paused = true

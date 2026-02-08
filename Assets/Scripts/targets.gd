@@ -2,7 +2,7 @@ extends Node2D
 var minigame_scene = load("res://Scenes/minigame.tscn")
 var instance
 var can_start_game = false
-var instance_count = 0
+@export var instance_count = 0
 
 
 func _ready() -> void:
@@ -27,7 +27,6 @@ func _on_target_hit_area_exited(area: Area2D) -> void:
 
 func start_minigame():
 	if can_start_game == true:
-		print("received signal")
 		if (instance_count >= 1):
 			stop_minigame()
 		else:
