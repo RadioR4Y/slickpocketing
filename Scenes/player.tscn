@@ -175,16 +175,8 @@ script = ExtResource("1_cvnsp")
 sprite_frames = SubResource("SpriteFrames_vgqql")
 animation = &"idlefront"
 
-<<<<<<< HEAD
 [node name="Camera2D" type="Camera2D" parent="." unique_id=369545439]
 zoom = Vector2(1.5, 1.5)
-=======
-<<<<<<< Updated upstream
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1043436235]
-=======
-[node name="Camera2D" type="Camera2D" parent="." unique_id=369545439]
-zoom = Vector2(2, 2)
->>>>>>> RamGoate
 
 [node name="player_hit" type="Area2D" parent="." unique_id=548978220]
 
@@ -193,10 +185,6 @@ shape = SubResource("RectangleShape2D_cvnsp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=586338652]
 position = Vector2(0, 3.5)
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
->>>>>>> RamGoate
 shape = SubResource("RectangleShape2D_v0iea")
 
 [connection signal="area_entered" from="player_hit" to="." method="_on_player_hit_area_entered"]
