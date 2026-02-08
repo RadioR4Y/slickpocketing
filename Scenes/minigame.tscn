@@ -1,23 +1,35 @@
-[gd_scene format=3 uid="uid://b7hy3ht4n7s0w"]
+[gd_scene format=3 uid="uid://yyeiqlds57h8"]
 
 [ext_resource type="Texture2D" uid="uid://by2e4iwtf6ykp" path="res://icon.svg" id="1_ij8rg"]
 [ext_resource type="Script" uid="uid://ddajg5t20xvqr" path="res://Assets/Scripts/minigame.gd" id="1_s7wve"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_45duu"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s7wve"]
+size = Vector2(73.14285, 66.66667)
+
 [node name="Minigame" type="Node2D" unique_id=1128993567]
-script = ExtResource("1_s7wve")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=1393747724]
 scale = Vector2(10, 40)
 texture = SubResource("PlaceholderTexture2D_45duu")
 
-[node name="WinZone" type="Sprite2D" parent="." unique_id=1842557067]
+[node name="Zone" type="Sprite2D" parent="." unique_id=1842557067]
 position = Vector2(-1, 0)
 scale = Vector2(0.028320313, 0.077148445)
 texture = ExtResource("1_ij8rg")
 
-[node name="Hand" type="Sprite2D" parent="." unique_id=441005545]
+[node name="Player" type="CharacterBody2D" parent="." unique_id=52115917]
+z_index = 2
 position = Vector2(-1, 0)
 scale = Vector2(0.027343752, 0.03)
+script = ExtResource("1_s7wve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1480251834]
+scale = Vector2(0.7, 0.7)
+shape = SubResource("RectangleShape2D_s7wve")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1910606552]
+position = Vector2(-9.536743e-07, -5.684342e-14)
+scale = Vector2(0.41071427, 0.3854167)
 texture = ExtResource("1_ij8rg")
