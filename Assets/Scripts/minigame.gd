@@ -15,8 +15,6 @@ func _ready():
 func _process(delta):
 	# WinZone movement while active
 	velocity = position.direction_to(Zone) * speed
-	if (position.distance_to(Zone) > 1):
-		velocity = move_and_slide(velocity)
 
 func update_zone():
 	Zone.y = randi_range(-15.0, 15.0)
